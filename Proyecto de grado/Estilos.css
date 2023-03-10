@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+   font-size: 1.5em; 
+   font-weight: bold;
+   padding: 5px 15px;
+   border-radius: 10px;
+   border: 2px solid rgba(0,0,0,5);
+   box-shadow: 2px 2px 10px rgba (0, 0, 0, 5); 
+   color: rgb(91, 125, 155);
+   background-color: rgb(0, 0, 0);
+}
+
+button:hover{
+background-color: rgba(225, 222, 228);
+}
+
+.container{
+ max-width: 1400px;
+ margin: auto;   
+}
+
+.color-acento{color: rgb(16, 16, 148);}
+
+header{
+    background-color: rgba(219, 213, 213, 0.851);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.6;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(3, 5, 105);
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.712);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#Resumen {
+    text-align: center;
+    padding: 250px 12px;background-color: rgba(255, 255, 255, 0.904);
+}
+
+ #Información{
+     background-color: rgba(10, 2, 49, 0.904);
+     color: white;
+     text-align: center;
+ }
+
+#Información .container{
+    padding: 150px 12px;
+}
+
+#Información h2{
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+#Información p{
+    display: none;
+}
+
+#Informacíon .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+
+}
+
+.carta{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/9--.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta a {
+    padding: 2rem;
+    color: aliceblue;
+    background-color: black;
+}
+
+.carta1{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 1.5rem 5rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/5.png");
+    background-position: center center;
+    background-size: cover;
+}
+.carta2{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imágenes/4.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+#caracteristicas{
+    text-align: center;
+    padding: 5rem;
+}
+
+#caracteristicas li{
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+#Final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+} 
+
+footer{
+    background-color: rgb(68, 68, 68);
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+footer .container{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+padding-right: 10px;
+} 
+ 
+#Somos-losmejores .container{
+display: flex;
+}
+#Somos-losmejores .texto{
+    width: 50%; 
+    text-align: initial;
+    padding: 0px 30px;
+}
+#Somos-losmejores .img-container{
+    background-image: - linear-gradient(
+        0deg
+        rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("Imágenes/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+} 
+}
